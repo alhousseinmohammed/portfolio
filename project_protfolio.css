@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: silver;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    margin-bottom: 2%;
+    padding-bottom:0
+}
+
+h1 {
+    color: red;
+    margin-left: 2%;
+}
+
+.home p {
+    margin-left: 2%;
+}
+
+.im {
+    margin-left: 2%;
+}
+
+
+.home p span {
+    color: red;
+    font-weight: bolder;
+}
+
+.home nav {
+    grid-column: span 2;
+    color: red
+}
+
+.home nav ul {
+    float: left;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.skills {
+    background-color: rgb(39, 39, 39);
+    justify-content: center;
+}
+
+.skills h2 {
+    color: red;
+    text-align: center;
+}
+
+.skills .myskills {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.skills .myskills .basics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.basics div {
+    background-color: rgb(39, 39, 39);
+    border: solid 4px red;
+    text-align: center;
+    border-radius: 10%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    width: 30%
+
+}
+.scondary {
+    width: 50%;
+}
+.others div {
+
+    border: solid 4px red;
+    border-radius: 10%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: center;
+    overflow: hidden;   
+}
+
+.skills div h3 {
+    text-align: center;
+    color:rgb(208, 208, 208);
+    background-color: silver;
+    color:rgb(39, 39, 39)
+}
+
+.works {
+    padding-top: 5%;
+    background-color: rgb(50, 50, 50);
+}
+
+.works h2 {
+    color: red;
+    text-align: center;
+}
+
+.myworks{
+    display: grid;
+    grid-template-areas: ". special special ." ". . . .";
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 3%;
+}
+
+.myworks div {
+    border: solid 3px;
+    border-color: red red silver silver;
+}
+
+.special {
+    grid-area: special;
+}
+
+.wroks .myworks div img {
+    height: 100%;
+    width:100%;
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+    margin-top: 0;
+}
+
+footer h3 {
+    color: White;
+    text-align: left;
+    margin: 2%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer p {
+    color: white;
+    background-color: rgb(39, 39, 39);
+}
+
+section {
+    padding-bottom: 2%;
+    margin-bottom: 0;
+}
+
+/* @media screen and (max-width: 380px) {
+    .myworks {
+        background-color: green;
+    }
+} */
